@@ -4,12 +4,12 @@ import Footer from '../Footer';
 const backgroundImage = '/window.jpg';
 
 const menuItems = [
-  { name: 'Espresso', description: 'Strong and bold, served in a small cup.', price: 120, image: 'public/espresso.png' },
-  { name: 'Cappuccino', description: 'Espresso with steamed milk foam.', price: 150, image: 'public/cappuccino.png' },
-  { name: 'Latte', description: 'Smooth blend of espresso and milk.', price: 160, image: 'public/latte.png' },
-  { name: 'Americano', description: 'Espresso diluted with hot water.', price: 130, image: 'public/americano.png' },
-  { name: 'Mocha', description: 'Espresso, chocolate syrup and steamed milk.', price: 170, image: 'public/mocha.png' },
-  { name: 'Cold Brew', description: 'Slow-steeped coffee served chilled.', price: 180, image: 'public/coldbrew.png' },
+  { name: 'Espresso', description: 'Strong and bold, served in a small cup.', price: 120, image: 'src/images/espresso.png' },
+  { name: 'Cappuccino', description: 'Espresso with steamed milk foam.', price: 150, image: 'src/images/cappuccino.png' },
+  { name: 'Latte', description: 'Smooth blend of espresso and milk.', price: 160, image: 'src/images/latte.png' },
+  { name: 'Americano', description: 'Espresso diluted with hot water.', price: 130, image: 'src/images/americano.png' },
+  { name: 'Mocha', description: 'Espresso, chocolate syrup and steamed milk.', price: 170, image: 'src/images/mocha.png' },
+  { name: 'Cold Brew', description: 'Slow-steeped coffee served chilled.', price: 180, image: 'src/images/coldbrew.png' },
 ];
 
 function Menu() {

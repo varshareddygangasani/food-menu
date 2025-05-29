@@ -1,12 +1,54 @@
-# React + Vite
+# ☕ Latte Groves - Cafe Menu Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Latte Groves** is a visually appealing, fully responsive cafe menu website. Built using React, it offers a smooth, interactive experience with scrollable menu sections, quantity selectors, order popups, and styled pages for About, Contact, and Feedback.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://foodmenuuu.netlify.app](https://foodmenuuu.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Beautiful glassmorphism design
+- Scrollable in-page menu with item images
+- Quantity selectors (+ / -) with live price updates
+- Popup with order summary and order ID
+- Responsive design for all devices
+- Pages: Home, Menu, About, Contact, Feedback
+- Modern fonts and color palette matching a cafe theme
+
+---
+
+## ⚙️ Tech Stack
+
+- **Framework:** React (with Vite)
+- **Routing:** React Router DOM v6
+- **Styling:** Custom CSS
+- **Deployment:** Netlify
+
+---
+
+## 📁 Structure
+
+src/
+├── components/
+│ ├── Navbar.jsx
+│ ├── Footer.jsx
+├── pages/
+│ ├── Home.jsx
+│ ├── Menu.jsx
+│ ├── About.jsx
+│ ├── Contact.jsx
+├── App.jsx
+└── main.jsx
+
+## 🛠️ Setup Instructions
+
+```bash
+git clone https://github.com/your-username/latte-groves.git
+cd latte-groves
+npm install
+npm run dev
+
+📬 Contact
+For queries or feedback, feel free to reach out.
+

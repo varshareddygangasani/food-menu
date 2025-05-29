@@ -1,6 +1,6 @@
 // src/components/Home.jsx
 import React from 'react';
-import backgroundImage from '../public/window.jpg'; // Ensure path is correct
+import backgroundImage from '../public/window.jpg';// Ensure path is correct
 import Footer from './Footer';
 import Menu from './pages/Menu';
 import { useNavigate } from 'react-router-dom';
