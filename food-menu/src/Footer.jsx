@@ -10,6 +10,9 @@ const Footer = () => {
     display: 'flex',
     gap: '20px',
     zIndex: 2,
+
+// left: '50%',
+//     transform: 'translateX(-50%)',
   };
 
   const iconStyle = {

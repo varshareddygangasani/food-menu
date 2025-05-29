@@ -1,9 +1,14 @@
+// src/components/Home.jsx
 import React from 'react';
 import backgroundImage from '../public/window.jpg'; // Ensure path is correct
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faFacebook, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import Footer from './Footer';
+import Menu from './pages/Menu';
+import { useNavigate } from 'react-router-dom';
+
+
 
 function Home() {
+  const navigate = useNavigate();
   const homeStyle = {
     backgroundImage: `url(${backgroundImage})`,
     backgroundSize: 'cover',
@@ -60,20 +65,21 @@ function Home() {
     letterSpacing: '0.5px',
   };
 
-  const socialMediaContainer = {
-    position: 'absolute',
-    bottom: '20px',
-    display: 'flex',
-    gap: '20px',
-    zIndex: 2,
+  const orderButtonStyle = {
+    marginTop: '20px',
+    padding: '12px 28px',
+    fontSize: '1.1rem',
+    fontWeight: 'bold',
+    color: 'white',
+    backgroundColor: '#b38258',
+    border: 'none',
+    borderRadius: '10px',
+    cursor: 'pointer',
+    transition: 'background 0.3s ease',
+    boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
   };
 
-  const iconStyle = {
-    color: 'white',
-    fontSize: '1.8rem',
-    cursor: 'pointer',
-    transition: 'transform 0.3s ease',
-  };
+  
 
   return (
     <div style={homeStyle}>
@@ -81,18 +87,11 @@ function Home() {
       <div style={titleContainerStyle}>
         <h1 style={titleStyle}>Latte grove</h1>
         <p style={taglineStyle}>Where comfort meets craft</p>
+        <button style={orderButtonStyle} onClick={() => navigate('/menu')}>
+          Order Now
+        </button>
       </div>
-      <div style={socialMediaContainer}>
-        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faInstagram} style={iconStyle} />
-        </a>
-        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faFacebook} style={iconStyle} />
-        </a>
-        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-          <FontAwesomeIcon icon={faTwitter} style={iconStyle} />
-        </a>
-      </div>
+      
     </div>
   );
 }

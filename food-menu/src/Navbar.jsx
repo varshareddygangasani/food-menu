@@ -1,4 +1,10 @@
 import React, { useState } from 'react';
+import Home from './Home';
+import Menu from './pages/Menu';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import { Link } from 'react-router-dom';
+
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,10 +37,10 @@ function Navbar() {
         </div>
 
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <a href="#" style={linkStyle}>Home</a>
-          <a href="#" style={linkStyle}>Menu</a>
-          <a href="#" style={linkStyle}>About</a>
-          <a href="#" style={linkStyle}>Contact</a>
+          <Link to="/" style={linkStyle}>Home</Link>
+          <Link to="/menu" style={linkStyle}>Menu</Link>
+          <Link to="/about" style={linkStyle}>About</Link>
+          <Link to="/contact" style={linkStyle}>Contact</Link>
         </div>
       </nav>
 
