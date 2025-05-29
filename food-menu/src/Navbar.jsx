@@ -78,6 +78,24 @@ function Navbar() {
         .nav-links a {
           transition: color 0.3s ease;
         }
+        
+        .nav-links a {
+            color: 'white',
+            textDecoration: 'none',
+            fontWeight: 'bold',
+            padding: '10px 15px',
+            display: 'block',
+            fontFamily: "'Marcellus', serif",
+            fontSize: '1.2rem', // Adjust for better visibility
+        };
+
+        .navbar-container {
+            font-family: 'Marcellus', serif;
+            font-size: 1.1rem;
+            letter-spacing: 0.5px;
+            }
+
+
 
         .nav-links a:hover {
           color: #f4d35e;
