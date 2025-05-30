@@ -6,6 +6,7 @@ import Contact from './pages/Contact';
 import { Link } from 'react-router-dom';
 
 
+
 function Navbar() {
   
 
@@ -13,6 +14,8 @@ function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
  
   const linkStyle = {
+    
+    fontFamily: "'Marcellus', serif",
     color: 'white',
     textDecoration: 'none',
     fontWeight: '600',
