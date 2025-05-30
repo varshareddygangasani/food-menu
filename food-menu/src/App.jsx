@@ -23,7 +23,8 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        <Footer />
+        {/* Render footer only if not on the /menu page */}
+        {location.pathname !== '/menu' && <Footer />}
       </div>
     </Router>
   );

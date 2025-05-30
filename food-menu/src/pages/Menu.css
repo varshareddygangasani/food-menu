@@ -1,4 +1,7 @@
 /* Menu.css */
+footer{
+    display: none;
+}
 .pageWrapper {
   position: fixed;
   inset: 0;
