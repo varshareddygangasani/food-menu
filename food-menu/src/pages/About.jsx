@@ -19,7 +19,7 @@ function About() {
           Enjoy the aroma of freshly brewed coffee, indulge in our seasonal treats, and let the warmth of our ambiance 
           make you feel right at home.
         </p>
-        <img src="public/window.jpg" alt="Latte Groves interior" style={styles.image} />
+        <img src="/window.jpg" alt="Latte Groves interior" style={styles.image} />
       </div>
       
     </div>
