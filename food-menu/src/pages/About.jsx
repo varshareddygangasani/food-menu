@@ -23,7 +23,9 @@ function About() {
         {/* ✅ Add class for image, no inline styles */}
         <img src="/window.jpg" alt="Latte Groves interior" className="about-image" />
       </div>
+      <Footer/>
     </div>
+
   );
 }
 

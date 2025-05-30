@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Navbar from "./Navbar";
-import Footer from "./Footer";
+
 
 import Home from "./Home";
 import Menu from "./pages/Menu";
@@ -23,8 +23,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </div>
-        {/* Render footer only if not on the /menu page */}
-        {location.pathname !== '/menu' && <Footer />}
+        
       </div>
     </Router>
   );

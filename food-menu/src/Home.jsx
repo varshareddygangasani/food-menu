@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import backgroundImage from '../public/window.jpg';
 import './Home.css'; // Import the new CSS file
+import Footer from './Footer';
 
 function Home() {
   const navigate = useNavigate();
@@ -22,6 +23,7 @@ function Home() {
           Order Now
         </button>
       </div>
+      <Footer/>
     </div>
   );
 }

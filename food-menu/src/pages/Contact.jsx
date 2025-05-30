@@ -38,7 +38,7 @@ function Contact() {
         </form>
 
         {submitted && <div style={styles.successMessage}>Thanks for reaching out! ☕</div>}
-      </div>
+      </div><Footer/>
     </div>
   );
 }
