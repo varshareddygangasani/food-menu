@@ -84,22 +84,4 @@
   }
 }
 
-/* Responsive styles */
-@media (max-width: 768px) {
-  .title-container {
-    padding: 32px 24px;
-  }
 
-  .home-title {
-    font-size: 2.5rem;
-  }
-
-  .home-tagline {
-    font-size: 1rem;
-  }
-
-  .order-button {
-    font-size: 1rem;
-    padding: 10px 24px;
-  }
-}
