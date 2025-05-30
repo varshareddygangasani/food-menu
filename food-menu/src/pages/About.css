@@ -1,0 +1,17 @@
+/* About.css */
+.about-image {
+  width: 100%;
+  height: 200px;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Hide image on mobile screens */
+@media (max-width: 600px) {
+  .about-image {
+    display: none;
+  }
+}

@@ -7,8 +7,11 @@ import { Link } from 'react-router-dom';
 
 
 function Navbar() {
-  const [menuOpen, setMenuOpen] = useState(false);
+  
 
+  
+  const [menuOpen, setMenuOpen] = useState(false);
+ 
   const linkStyle = {
     color: 'white',
     textDecoration: 'none',
@@ -37,10 +40,10 @@ function Navbar() {
         </div>
 
         <div className={`nav-links ${menuOpen ? 'open' : ''}`}>
-          <Link to="/" style={linkStyle}>Home</Link>
-          <Link to="/menu" style={linkStyle}>Menu</Link>
-          <Link to="/about" style={linkStyle}>About</Link>
-          <Link to="/contact" style={linkStyle}>Contact</Link>
+          <Link to="/" style={linkStyle} onClick={() => setMenuOpen(false)}>Home</Link>
+          <Link to="/menu" style={linkStyle} onClick={() => setMenuOpen(false)}>Menu</Link>
+          <Link to="/about" style={linkStyle} onClick={() => setMenuOpen(false)}>About</Link>
+          <Link to="/contact" style={linkStyle} onClick={() => setMenuOpen(false)}>Contact</Link>
         </div>
       </nav>
 

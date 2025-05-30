@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../Footer';
-import { height } from '@fortawesome/free-brands-svg-icons/fa42Group';
+import './About.css'; // ✅ import the CSS file
 
 const backgroundImage = '/window.jpg';
 
@@ -19,13 +19,15 @@ function About() {
           Enjoy the aroma of freshly brewed coffee, indulge in our seasonal treats, and let the warmth of our ambiance 
           make you feel right at home.
         </p>
-        <img src="/window.jpg" alt="Latte Groves interior" style={styles.image} />
+
+        {/* ✅ Add class for image, no inline styles */}
+        <img src="/window.jpg" alt="Latte Groves interior" className="about-image" />
       </div>
-      
     </div>
   );
 }
 
+// No changes to your existing styles
 const styles = {
   wrapper: {
     position: 'fixed',
@@ -65,22 +67,16 @@ const styles = {
     marginBottom: '20px',
   },
   brand: {
-    color: '#ffb347',
+    fontFamily: "'Cinzel Decorative', cursive",
+    color: '#d7a86e',
+    fontSize: '2.5rem',
+    
   },
   text: {
     fontSize: '1.1rem',
     lineHeight: '1.8',
     color: '#f3e9df',
     marginBottom: '20px',
-  },
-  image: {
-    width: '100%',
-    height:'200px',
-    maxHeight: '300px',
-    objectFit: 'cover',
-    borderRadius: '14px',
-    marginTop: '20px',
-    border: '1px solid rgba(255,255,255,0.3)',
   },
 };
 
